@@ -8,13 +8,17 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SmallCardsComponent implements OnInit {
 
   @Input()
-  photoCover:string="https://disneyplusbrasil.com.br/wp-content/uploads/2021/07/Series-Marvel-Disney-Plus-1024x576.jpg"
-  
+  photoCover:string=""
+
   @Input()
-  cardTitle:string = "NOVA SÉRIE ANUNCIADA"
+  cardTitle:string = ""
+
+  @Input()
+  Id:string = "0"
+
   constructor () {}
 
   ngOnInit(): void {
-    
+
   }
 }
